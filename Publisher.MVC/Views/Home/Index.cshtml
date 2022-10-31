@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">
+        <p class="text-center">
+            پیام با موفقیت ارسال شد
+        </p>
+    </div>
+}
+
+<a class="btn btn-primary" asp-action="SendMessage" asp-controller="Home">
+    ارسال پیام
+</a>

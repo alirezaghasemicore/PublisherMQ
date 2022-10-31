@@ -1,0 +1,36 @@
+﻿@model Domain.ViewModels.SendMessage_ViewModel
+@{
+    ViewData["Title"] = "Send Message";
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div class="row">
+
+    <div class="col-12">
+        <h1>
+            ارسال پیام
+        </h1>
+        <form method="post">
+
+
+
+            <div class="my-2">
+                <textarea class="form-control" asp-for="Message">
+
+                </textarea>
+                <span asp-validation-for="Message"></span>
+            </div>
+
+            <div class="my-2">
+
+                <button type="submit" class="btn btn-success btn-sm">
+                    ارسال
+                </button>
+
+            </div>
+
+        </form>
+    </div>
+</div>
